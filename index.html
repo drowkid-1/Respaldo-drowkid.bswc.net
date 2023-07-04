@@ -49,6 +49,22 @@
         </div>
       </div>
 
+            <script>
+            function openIframe(){
+                let getIframe = document.querySelector('.embedai-iframe')
+                if(getIframe.style.display=='none'){
+                    getIframe.style.display='block'
+                    getIframe.style.setProperty('pointer-events','auto')
+        
+                }else{
+                    getIframe.style.display='none'
+                    getIframe.style.setProperty('pointer-events','none')
+                }
+            }
+            </script>
+            <img onclick="openIframe()" src='https://embedai.thesamur.ai/heybotnew/get_logo?slug=drowk' style="cursor:pointer;position: fixed; width: 2rem; height: 2rem; bottom: 32px; right: 32px; z-index: 999999; opacity: 1" />
+            <iframe class="embedai-iframe" frameBorder="0" style="display:none;position: fixed; width: 396px; height: 75vh; bottom: 70px; right: 32px;pointer-events: none;z-index:99999 " src="https://embedai.thesamur.ai/embedai/embed/drowk" />
+        
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
